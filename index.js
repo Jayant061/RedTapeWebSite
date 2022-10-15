@@ -41,7 +41,7 @@ function clearCart(){
     <h3>Added items will appear here</h3><br>
     `);
     el.innerHTML = "";
-    costEl.innerHTML = (`<h2> Total Cost: $ 0.</h2>`);
+    costEl.innerHTML = (`<h2> Total Cost: $ 0</h2>`);
     cost = 0;
     productCount = 0;
     costEl.style.color = "white";
@@ -49,14 +49,21 @@ function clearCart(){
     el.style.marginTop = "40px";
 }
 function openCart(){
+
     popupEl.classList.add("open-popup");
+    let cost = productCount*50;
     if(productCount === 0){
-        el.innerHTML = (`
-        <h4>Total Items: ${productCount}</h4><br>`);
+        countEl.innerHTML = (`
+        <h3>Added items will appear here</h3><br>
+        `);
         costEl.innerHTML = (`<h2> Total Cost:$ 0.00</h2>`);
+    }
+    else{
+        countEl.innerHTML = (`
+        <h3>Total Items: ${productCount}</h3><br>`);
+        costEl.innerHTML = (`<h2> Total Cost: ${cost}</h2>`);
+    }
         costEl.style.color = "white";
         costEl.style.marginTop = "20px";
         el.style.marginTop = "40px";
-
-    }
 }
