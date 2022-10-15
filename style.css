@@ -413,5 +413,9 @@ ul{
 .col, .col2, .col3{
     flex-basis: 100%;
 }
+.open-popup{
+    width: 80%;
+    height: 50vh;
+}
 
 }
