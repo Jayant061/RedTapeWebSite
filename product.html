@@ -24,7 +24,8 @@
                         <li><a href="#">Account</a></li>
                     </ul>
                 </nav>
-                <img src="Images/cart.png" width = "30px" height="30px">
+                <img src="Images/cart.png" width = "30px" height="30px"
+                onclick="openCart()">
                 <img src="Images/menu.png" class = "menu-icon" onclick="menutoggle()">
             </div>
         </div>
@@ -63,48 +64,8 @@
         <div class="row">
             <div class="col3">
                 <img src="Images/product-1.jpg" alt="">
-<!--                     <button class="add-to-cart">Add to cart</button> -->
-                    <h4><br>Red Printed T-Shirt</h4>
-                <div class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-full"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="row">
-                <div class="col3">
-                    <img src="Images/product-1.jpg" alt="">
-                        <button class="add-to-cart" id="add-to-cart" onclick = "addToCart('p1')">Add to cart</button>
-                        <br><h4 id="p1">Red Printed T-Shirt</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
-                    </div>
-                    <p id = "price">$50.00</p>
-                </div>
-                <div class="col3">
-                    <img src="Images/product-2.jpg" alt="">
-                    <button class="add-to-cart" onclick = "addToCart('p2')">Add to cart</button>
-                    <h4 id="p2"><br>HRX Shoe Black</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
-                    </div>
-                    <p id = "price">$50.00</p>
-                </div>
-                <div class="col3">
-                    <img src="Images/product-3.jpg" alt="">
-                    <button class="add-to-cart"onclick = "addToCart('p3')">Add to cart</button>
-                    <h4 id="p3"><br>Stylish Pajama</h4>
+                <div class="contentItem">
+                    <h4 id="p1">Red Printed T-Shirt</h4>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -112,109 +73,181 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <p id = "price">$50.00</p>
-                </div>
-                <div class="col3">
-                    <img src="Images/product-4.jpg" alt="">
-                    <button class="add-to-cart" onclick = "addToCart('p4')">Add to cart</button>
-                    <h4 id="p4"><br>Blue Printed T-Shirt</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p id = "price">$50.00</p>
+                    <p>$50.00</p>
                 </div>
             </div>
         </div>
-
             <div class="row">
+
+                <div class="col3">
+                    <img src="Images/product-1.jpg" alt="">
+                    <div class="contentItem">
+                        <h4 id="p1">Red Printed T-Shirt</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </div>
+                    <button class="add-to-cart"onclick = "addToCart('p1')">Add to cart</button>
+                </div>
+    
+                <div class="col3">
+                    <img src="Images/product-2.jpg" alt="">
+                    <div class="contentItem">
+                        <h4 id="p2">HRX Shoe Black</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </div>
+                    <button class="add-to-cart"onclick = "addToCart('p2')">Add to cart</button>
+                </div>
+    
+                <div class="col3">
+                    <img src="Images/product-3.jpg" alt="">
+                    <div class="contentItem">
+                        <h4 id="p3">Stylish Pajama</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </div>
+                    <button class="add-to-cart"onclick = "addToCart('p3')">Add to cart</button>
+                </div>
+    
+                <div class="col3">
+                    <img src="Images/product-4.jpg" alt="">
+                    <div class="contentItem">
+                        <h4 id="p4">Blue Printed T-Shirt</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </div>
+                    <button class="add-to-cart"onclick = "addToCart('p4')">Add to cart</button>
+                </div>
+    
+            
+            <div class="row">
+    
                 <div class="col3">
                     <img src="Images/product-5.jpg" alt="">
-                        <button class="add-to-cart" onclick = "addToCart('p5')">Add to cart</button>
-                        <h4 id="p5"><br>Comfort Casual Shoe</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
+                    <div class="contentItem">
+                        <h4 id="p5">Comfortable Shoe Casual</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p5')">Add to cart</button>
                 </div>
+    
                 <div class="col3">
                     <img src="Images/product-6.jpg" alt="">
-                    <button class="add-to-cart"onclick = "addToCart('p6')">Add to cart</button>
-                    <h4 id="p6"><br>Black Puma T-Shirt</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
+                    <div class="contentItem">
+                        <h4 id="p6">Puma Black T-Shirt</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p6')">Add to cart</button>
                 </div>
+    
                 <div class="col3">
                     <img src="Images/product-7.jpg" alt="">
-                    <button class="add-to-cart" onclick = "addToCart('p7')">Add to cart</button>
-                    <h4 id="p7"><br>HRX shocks pack of 3</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
+                    <div class="contentItem">
+                        <h4 id="p7">HRX Shocks Pack of 3</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p7')">Add to cart</button>
                 </div>
-                <div class="col3">
+    
+               <div class="col3">
                     <img src="Images/product-8.jpg" alt="">
-                    <button class="add-to-cart" onclick = "addToCart('p8')">Add to cart</button>
-                    <h4 id="p8"><br>Fossil black Watch</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
+                    <div class="contentItem">
+                        <h4 id="p8">Fossil Balck Wrist Watch</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p11')">Add to cart</button>
                 </div>
-            </div>
+    
             <div class="row">
+    
                 <div class="col3">
                     <img src="Images/product-9.jpg" alt="">
-                        <button class="add-to-cart"onclick = "addToCart('p9')">Add to cart</button>
-                        <h4 id="p9"><br>Roadster black Watch</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
+                    <div class="contentItem">
+                        <h4 id="p9">Roadster Wrist Watch Black</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p9')">Add to cart</button>
                 </div>
+    
                 <div class="col3">
                     <img src="Images/product-10.jpg" alt="">
-                    <button class="add-to-cart" onclick = "addToCart('p10')">Add to cart</button>
-                    <h4 id="p10"><br>HRX black red spot Shoe</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
+                    <div class="contentItem">
+                        <h4 id="p10">Black Red spot Shoe</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p10')">Add to cart</button>
                 </div>
+    
                 <div class="col3">
                     <img src="Images/product-11.jpg" alt="">
-                    <button class="add-to-cart"onclick = "addToCart('p11')">Add to cart</button>
-                    <h4 id="p11"><br>Comfortable Loafer</h4>
+                    <div class="contentItem">
+                    <h4 id="p11">Comfortable Loafer</h4>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -223,19 +256,23 @@
                         <i class="fa fa-star-o"></i>
                     </div>
                     <p>$50.00</p>
+                </div>
+                    <button class="add-to-cart"onclick = "addToCart('p11')">Add to cart</button>
                 </div>
                 <div class="col3">
                     <img src="Images/product-12.jpg" alt="">
-                    <button class="add-to-cart"onclick = "addToCart('p12')">Add to cart</button>
-                    <h4 id="p12"><br>Black Pajama</h4>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
+                    <div class="contentItem">
+                        <h4 id="p12">Nike Black Pajama</h4>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
                     </div>
-                    <p>$50.00</p>
+                    <button class="add-to-cart"onclick = "addToCart('p12')">Add to cart</button>
                 </div>
             </div>
 
