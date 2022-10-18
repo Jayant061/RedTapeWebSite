@@ -8,13 +8,15 @@ function menutoggle(){
     }
 }
 let countEl = document.getElementById('count');
-countEl.style.marginTop = "80px";
+countEl.style.marginTop = "100px";
 let popupEl = document.getElementById("popup");
 
 let el = document.getElementById("popupel")
 
 let costEl = document.getElementById("cost")
 
+el.style.color = "midNightBlue"
+countEl.style.color = "midNightBlue"
 let productCount = 0;
 
 function addToCart(idString){
@@ -28,9 +30,11 @@ function addToCart(idString){
     let cost = productCount*50;
     element+=(`<h4>${text.textContent}: $ 50.00</h4>`)
     el.innerHTML += element;
+
     costEl.innerHTML = (`<h2> Total Cost: $ ${cost}</h2>`);
-    costEl.style.color = "white";
+    costEl.style.color = "midNightBlue";
     el.style.marginTop = "20px";
+
 
 }
 function closePopup(){
@@ -50,7 +54,7 @@ function clearCart(){
 }
 function openCart(){
 
-    popupEl.classList.add("open-popup");
+    popupEl.classList.toggle("open-popup");
     let cost = productCount*50;
     if(productCount === 0){
         countEl.innerHTML = (`
@@ -63,7 +67,7 @@ function openCart(){
         <h3>Total Items: ${productCount}</h3><br>`);
         costEl.innerHTML = (`<h2> Total Cost: ${cost}</h2>`);
     }
-        costEl.style.color = "white";
+        costEl.style.color = "midNightBlue";
         costEl.style.marginTop = "20px";
         el.style.marginTop = "40px";
 }
